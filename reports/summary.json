@@ -1,0 +1,53 @@
+{
+  "once": {
+    "label": "Önce (eski WordPress teması)",
+    "runs": 3,
+    "values": {
+      "performance": 22,
+      "accessibility": 89,
+      "best-practices": 96,
+      "seo": 91,
+      "fcp": 7211,
+      "lcp": 22071,
+      "tbt": 2365,
+      "cls": 0.178,
+      "si": 7211,
+      "bytes": 3722,
+      "requests": 20
+    },
+    "opportunities": [
+      {
+        "id": "unused-css-rules",
+        "title": "Reduce unused CSS",
+        "savingsMs": 4660
+      },
+      {
+        "id": "unused-javascript",
+        "title": "Reduce unused JavaScript",
+        "savingsMs": 2270
+      }
+    ],
+    "lighthouse": "13.5.0",
+    "fetchTime": "2026-09-28T15:32:43.583Z"
+  },
+  "sonra": {
+    "label": "Sonra (optimize)",
+    "runs": 3,
+    "values": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "fcp": 906,
+      "lcp": 1505,
+      "tbt": 0,
+      "cls": 0,
+      "si": 906,
+      "bytes": 115,
+      "requests": 7
+    },
+    "opportunities": [],
+    "lighthouse": "13.5.0",
+    "fetchTime": "2026-09-28T15:33:13.043Z"
+  }
+}

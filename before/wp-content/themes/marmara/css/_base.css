@@ -1,0 +1,56 @@
+/* Marmara Lojistik — tema stilleri (2018) */
+@font-face { font-family: "Open Sans"; src: url("../fonts/opensans-regular.ttf") format("truetype"); font-weight: 400; }
+@font-face { font-family: "Open Sans"; src: url("../fonts/opensans-bold.ttf") format("truetype"); font-weight: 700; }
+@font-face { font-family: "Playfair Display"; src: url("../fonts/playfair.ttf") format("truetype"); font-weight: 600; }
+* { margin: 0; padding: 0; }
+body { font-family: "Open Sans", Arial, sans-serif; color: #333; font-size: 14px; line-height: 1.6; background: #fff; }
+a { color: #0c6ba8; }
+img { border: 0; }
+.container { width: 1170px; margin: 0 auto; padding: 0 15px; }
+#topbar { background: #0b2a45; color: #cfe3f5; font-size: 12px; padding: 6px 0; }
+#topbar .container { display: flex; justify-content: space-between; }
+#header { padding: 18px 0; border-bottom: 1px solid #ddd; }
+#header .container { display: flex; align-items: center; justify-content: space-between; }
+#logo { font-family: "Playfair Display", Georgia, serif; font-size: 26px; color: #0b2a45; text-decoration: none; }
+#logo span { color: #f0a020; }
+#nav ul { list-style: none; display: flex; }
+#nav li { margin-left: 22px; }
+#nav a { text-decoration: none; color: #333; font-weight: 700; text-transform: uppercase; font-size: 13px; }
+#nav a:hover { color: #0c6ba8; }
+.rev-slider { position: relative; height: 560px; overflow: hidden; background: #123; }
+.rev-slide { position: absolute; inset: 0; background-size: cover; background-position: center; display: none; }
+.rev-slide.active { display: block; }
+.rev-caption { position: absolute; left: 0; right: 0; bottom: 90px; text-align: center; color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,.6); }
+.rev-caption h1 { font-family: "Playfair Display", Georgia, serif; font-size: 48px; font-weight: 600; margin-bottom: 12px; }
+.rev-caption p { font-size: 18px; margin-bottom: 20px; }
+.btn { display: inline-block; background: #f0a020; color: #fff; padding: 12px 28px; text-decoration: none; text-transform: uppercase; font-weight: 700; border-radius: 3px; }
+.btn-outline { background: transparent; border: 2px solid #fff; }
+.section { padding: 60px 0; }
+.section h2 { font-family: "Playfair Display", Georgia, serif; font-size: 34px; text-align: center; margin-bottom: 8px; color: #0b2a45; }
+.section .sub { text-align: center; color: #777; margin-bottom: 36px; }
+.row { display: flex; flex-wrap: wrap; margin: 0 -15px; }
+.col-3 { width: 25%; padding: 0 15px; box-sizing: border-box; }
+.col-4 { width: 33.333%; padding: 0 15px; box-sizing: border-box; }
+.col-6 { width: 50%; padding: 0 15px; box-sizing: border-box; }
+.service { text-align: center; padding: 26px 18px; border: 1px solid #e5e5e5; border-radius: 4px; margin-bottom: 30px; }
+.service .ico { font-size: 40px; color: #f0a020; margin-bottom: 12px; }
+.service h3 { font-size: 18px; margin-bottom: 8px; }
+.service p { color: #666; }
+.stats { background: #0b2a45; color: #fff; text-align: center; }
+.stats .num { font-size: 42px; font-weight: 700; color: #f0a020; }
+.gallery img { width: 100%; height: auto; display: block; margin-bottom: 30px; }
+.testimonial { background: #f7f7f7; padding: 24px; border-left: 4px solid #f0a020; margin-bottom: 30px; font-style: italic; }
+.testimonial b { display: block; font-style: normal; margin-top: 10px; color: #0b2a45; }
+form.wpcf7 label { display: block; margin-bottom: 14px; }
+form.wpcf7 input, form.wpcf7 textarea, form.wpcf7 select { width: 100%; padding: 10px; border: 1px solid #ccc; font: inherit; margin-top: 4px; }
+#footer { background: #111; color: #aaa; padding: 40px 0; font-size: 13px; }
+#footer .row > div { margin-bottom: 20px; }
+#footer h4 { color: #fff; margin-bottom: 10px; }
+#footer a { color: #aaa; }
+#cookie-bar { background: #222; color: #fff; padding: 18px; text-align: center; font-size: 13px; }
+#promo-popup { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: none; align-items: center; justify-content: center; z-index: 999; }
+#promo-popup .box { background: #fff; padding: 30px; width: 420px; text-align: center; }
+.whatsapp-float { position: fixed; right: 20px; bottom: 20px; background: #25d366; color: #fff; padding: 14px 18px; border-radius: 40px; text-decoration: none; font-weight: 700; }
+.map-embed { width: 100%; height: 360px; border: 0; background: #e8eef3; }
+@media (max-width: 1200px) { .container { width: auto; } }
+@media (max-width: 768px) { .col-3, .col-4, .col-6 { width: 100%; } #nav { display: none; } .rev-caption h1 { font-size: 30px; } .rev-slider { height: 420px; } }

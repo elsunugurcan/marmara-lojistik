@@ -1,0 +1,6 @@
+{
+  "$comment": "Performans bütçesi — 'sonra' sürümü bu sınırları aşarsa kontrol başarısız olur (CI'da her değişiklikte çalışır).",
+  "lighthouse": { "performance": 95, "accessibility": 95, "best-practices": 95, "seo": 95 },
+  "metrics": { "lcp": 2500, "tbt": 200, "cls": 0.1, "fcp": 1800 },
+  "weights": { "totalKB": 300, "requests": 15, "htmlKB": 30, "jsKB": 5, "fontsKB": 80, "heroImageKB": 60 }
+}

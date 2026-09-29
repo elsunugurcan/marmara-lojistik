@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://marmaralojistik.example/sitemap.xml

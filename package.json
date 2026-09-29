@@ -1,0 +1,30 @@
+{
+  "name": "marmara-lojistik-performans",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Marmara Lojistik kurumsal sitesi — ölçülebilir hız, SEO ve güvenlik iyileştirmesi (önce/sonra)",
+  "scripts": {
+    "legacy:build": "node scripts/build-legacy.mjs",
+    "images": "node scripts/optimize-images.mjs",
+    "serve:once": "node scripts/serve.mjs before 8081 legacy",
+    "serve:sonra": "node scripts/serve.mjs after 8082 tuned",
+    "audit": "node scripts/audit.mjs 3",
+    "load": "node scripts/load-test.mjs 25 15",
+    "filmstrip": "node scripts/filmstrip.mjs",
+    "report": "node scripts/report.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node scripts/check.mjs",
+    "all": "npm run images && npm run audit && npm run load && npm run filmstrip && npm run report && npm run check"
+  },
+  "dependencies": {
+    "lighthouse": "^13.5.0",
+    "sharp": "^0.35.5",
+    "chrome-launcher": "^1.2.1"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.0"
+  },
+  "license": "MIT",
+  "author": "Uğur Can Elsun"
+}

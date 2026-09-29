@@ -1,0 +1,30 @@
+{
+  "once": {
+    "concurrency": 25,
+    "durationSec": 15,
+    "resources": 20,
+    "pageViewsPerSec": 220.1,
+    "p50ms": 108,
+    "p95ms": 156,
+    "kbPerView": 3719,
+    "gbPer100kViews": 354.6,
+    "notFoundPerView": 1,
+    "notFound": [
+      "/favicon.ico"
+    ],
+    "errors": 0
+  },
+  "sonra": {
+    "concurrency": 25,
+    "durationSec": 15,
+    "resources": 6,
+    "pageViewsPerSec": 2217.5,
+    "p50ms": 9,
+    "p95ms": 24,
+    "kbPerView": 111,
+    "gbPer100kViews": 10.6,
+    "notFoundPerView": 0,
+    "notFound": [],
+    "errors": 0
+  }
+}
